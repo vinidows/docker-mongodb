@@ -1,7 +1,7 @@
 # docker-mongodb
 Comando para criação de um container com banco de dados MYSQL com o uso do docker
 
-docker container run --name desafio03 -d -p 8081:8081 -e MONGO_INITDB_ROOT_USERNAME=mongo_usr -e MONGO_INITDB_ROOT_PASSWORD=mongo_pwd -e MONGO_INITDB_DATABASE=mongodb mongo
+docker container run --name desafio03 -d -p 27017:27017  -e MONGO_INITDB_ROOT_USERNAME=mongo_usr -e MONGO_INITDB_ROOT_PASSWORD=mongo_pwd -e MONGO_INITDB_DATABASE=mongodb mongo
 
 docker container run <-- é usado para criação de um container em cima de uma imagem 
 --name NOME <-- é usado para escolher o nome do container o nome dele ser colocado logo em seguida 
